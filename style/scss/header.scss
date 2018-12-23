@@ -1,7 +1,7 @@
 .header {
   overflow: hidden;
   background-color: #2C340C;
-  opacity: 0.9;
+  opacity: 0.85;
   border-bottom: 1px solid #9d9d9d;
 }
 
@@ -33,7 +33,7 @@
 }
 .header-btn {
   position: absolute;
-  background-color: rgba(212, 68, 87, 0.9);
+  background-color: #8da626;
   left: 14em;
   border: none;
   color: #fff;
@@ -70,7 +70,7 @@
 @media screen and (max-width: 564px) {
   .header-btn {
     position: static;
-    width: 27%;
+    width: 28%;
     padding: 0.8em 0.5em 0.8em 0.5em;
     margin: 0 auto 10px auto;
     font-size: smaller;
@@ -114,10 +114,30 @@
     top: 42px;
   }
 }
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 1151px) {
   .header-text {
-    left: 30em;
+    left: 0;
+    right: 0;
+    text-align: center;
 
   }
-
+  .header-btn {
+    margin-top: -7px;
+    position: static;
+  }
 }
+  @media screen and (min-width: 970px) and (max-width: 1150px) {
+    .header-text {
+      left: 25em;
+      right: 0;
+      text-align: center;
+
+    }
+    .header-btn {
+      margin-top: -7px;
+      position: static;
+    }
+  }
+
+
+
